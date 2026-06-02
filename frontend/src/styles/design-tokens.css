@@ -1,0 +1,50 @@
+/* Hive 设计 Token —— 由 Pencil 原型设计变量固化而来。
+   深色模式：给 <html> 设置 data-theme="dark"。 */
+:root {
+  --hive-honey: #F59E0B;
+  --hive-honey-soft: #FEF3C7;
+  --hive-primary: #4F46E5;
+  --hive-primary-hover: #4338CA;
+  --hive-success: #16A34A;
+  --hive-danger: #DC2626;
+  --hive-info: #0EA5E9;
+
+  --hive-sidebar-bg: #1E1B2E;
+  --hive-sidebar-hover: #2A2640;
+  --hive-sidebar-text: #A9A4C2;
+
+  --hive-prio-low: #64748B;
+  --hive-prio-mid: #0EA5E9;
+  --hive-prio-high: #F59E0B;
+  --hive-prio-urgent: #DC2626;
+
+  --hive-surface: #FFFFFF;
+  --hive-bg-subtle: #F8FAFC;
+  --hive-ink: #0F172A;
+  --hive-body: #334155;
+  --hive-muted: #64748B;
+  --hive-border: #E2E8F0;
+  --hive-primary-soft: #EEF2FF;
+
+  --hive-radius-sm: 6px;
+  --hive-radius-md: 8px;
+  --hive-radius-lg: 12px;
+}
+
+:root[data-theme="dark"] {
+  --hive-surface: #232030;
+  --hive-bg-subtle: #16131F;
+  --hive-ink: #F1F5F9;
+  --hive-body: #CBD5E1;
+  --hive-muted: #94A3B8;
+  --hive-border: #343044;
+  --hive-primary-soft: #312E5F;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--hive-bg-subtle);
+  color: var(--hive-body);
+}

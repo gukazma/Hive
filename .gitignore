@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+frontend/dist/
+
+# Go
+backend/hive
+backend/server
+*.exe
+
+# 环境与密钥
+.env
+backend/.env
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 工具产物 / 本地
+.playwright-mcp/
+mcp-*.png
+.claude/
+backend/uploads/
+
+# 设计原型导出（按需保留）
+# exports/

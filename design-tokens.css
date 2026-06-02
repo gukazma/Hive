@@ -1,0 +1,72 @@
+/* Hive 设计 Token —— 由 Pencil 原型设计变量固化而来
+   用法：在 React 入口引入本文件；切换深色模式给 <html> 加 data-theme="dark"。 */
+
+:root {
+  /* 品牌与强调色（明暗一致） */
+  --hive-honey: #F59E0B;
+  --hive-honey-soft: #FEF3C7;
+  --hive-primary: #4F46E5;
+  --hive-primary-hover: #4338CA;
+  --hive-success: #16A34A;
+  --hive-success-soft: #DCFCE7;
+  --hive-warning: #F59E0B;
+  --hive-danger: #DC2626;
+  --hive-danger-soft: #FEE2E2;
+  --hive-info: #0EA5E9;
+
+  /* 侧边栏（明暗一致，始终深色） */
+  --hive-sidebar-bg: #1E1B2E;
+  --hive-sidebar-hover: #2A2640;
+  --hive-sidebar-text: #A9A4C2;
+
+  /* 任务优先级 */
+  --hive-prio-low: #64748B;
+  --hive-prio-mid: #0EA5E9;
+  --hive-prio-high: #F59E0B;
+  --hive-prio-urgent: #DC2626;
+
+  /* 中性色 —— 浅色主题（默认） */
+  --hive-surface: #FFFFFF;
+  --hive-bg-subtle: #F8FAFC;
+  --hive-ink: #0F172A;
+  --hive-body: #334155;
+  --hive-muted: #64748B;
+  --hive-border: #E2E8F0;
+  --hive-primary-soft: #EEF2FF;
+
+  /* 排版 */
+  --hive-font: "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --hive-fs-display: 28px;  --hive-lh-display: 36px;
+  --hive-fs-h1: 24px;       --hive-lh-h1: 32px;
+  --hive-fs-h2: 20px;       --hive-lh-h2: 28px;
+  --hive-fs-h3: 16px;       --hive-lh-h3: 24px;
+  --hive-fs-body: 14px;     --hive-lh-body: 22px;
+  --hive-fs-small: 13px;    --hive-lh-small: 20px;
+  --hive-fs-caption: 12px;  --hive-lh-caption: 16px;
+  --hive-fw-regular: 400;
+  --hive-fw-medium: 500;
+  --hive-fw-semibold: 600;
+
+  /* 间距（4 基数）/ 圆角 / 阴影 */
+  --hive-space-1: 4px;  --hive-space-2: 8px;  --hive-space-3: 12px;
+  --hive-space-4: 16px; --hive-space-5: 20px; --hive-space-6: 24px;
+  --hive-space-8: 32px; --hive-space-10: 40px; --hive-space-12: 48px; --hive-space-16: 64px;
+  --hive-radius-sm: 6px;
+  --hive-radius-md: 8px;
+  --hive-radius-lg: 12px;
+  --hive-radius-pill: 999px;
+  --hive-shadow-card: 0 1px 2px rgba(15,23,42,.06);
+  --hive-shadow-popover: 0 4px 12px rgba(15,23,42,.10);
+  --hive-shadow-modal: 0 12px 32px rgba(15,23,42,.18);
+}
+
+/* 中性色 —— 深色主题（覆盖；其余 token 不变） */
+:root[data-theme="dark"] {
+  --hive-surface: #232030;
+  --hive-bg-subtle: #16131F;
+  --hive-ink: #F1F5F9;
+  --hive-body: #CBD5E1;
+  --hive-muted: #94A3B8;
+  --hive-border: #343044;
+  --hive-primary-soft: #312E5F;
+}
